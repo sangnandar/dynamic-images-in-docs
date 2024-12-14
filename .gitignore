@@ -1,5 +1,7 @@
 **/**
 !.gitignore
+!README.md
+!LICENSE
 !*.gs
 !*.html
 Readme.gs
