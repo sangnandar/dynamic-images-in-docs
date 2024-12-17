@@ -7,11 +7,12 @@ This is Google Apps Script for inserting dynamic images into Google Docs. Images
 None. 
 
 # Docs Template
-(template screenshot)
+<div align="center"><img src="https://github.com/user-attachments/assets/de15b41c-0017-4bcb-8afb-87f0c774b735" /></div>
 
 # Sheets
 Check the boxes then click **Custom Menu -> Create documents**
-(sheets screenshot)
+
+<div align="center"><img src="https://github.com/user-attachments/assets/38499891-1967-4193-99ec-36de1c12feee" /></div>
 
 # Sheets dependencies
 **DO NOT** re-arrange columns or delete columns affected by the ranges.
