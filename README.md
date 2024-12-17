@@ -26,10 +26,19 @@ None
 ```
 
 # Folder structure
-├── folder1/
-│   ├── file1.txt
-│   └── file2.txt
-└── folder2/
-    └── file3.txt
+```
+imageFolder/
+├── John Smith/
+│   ├── Figure 1.png
+│   └── Figure 2.jpg
+├── Jane Doe/
+│   ├── Figure 1.jpg
+│   └── Figure 2.png
+└── (etc)
 
+docsFolder/
+├── John Smith.gdoc
+├── Jane Doe.gdoc
+└── (etc)
+```
 
