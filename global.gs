@@ -13,9 +13,6 @@ const config = [
   }
 ];
 
-const imageFolderId = '1f7e-keb55S_OtqgszN8PRYKGZbYuEjmt'; // stored images for each customers
-const docsFolderId = '1fiJhcZzpVu79kqFJjKtLk5pKmgS2aJGc'; // created docs goes here
-
 // image file types
 const mimeTypes = [
   MimeType.PNG,
@@ -23,6 +20,9 @@ const mimeTypes = [
   MimeType.BMP,
   MimeType.GIF
 ];
+
+const imageFolderId = '1f7e-keb55S_OtqgszN8PRYKGZbYuEjmt'; // stored images for each customers
+const docsFolderId = '1fiJhcZzpVu79kqFJjKtLk5pKmgS2aJGc'; // created docs goes here
 
 // templates for modal dialog
 const htmlTemplate = HtmlService.createTemplate(`
