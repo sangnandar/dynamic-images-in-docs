@@ -24,12 +24,20 @@ function createDocsFromTemplate() {
       docsCopy = DriveApp.getFileById(docsTemplateId).makeCopy(customerName, DriveApp.getFolderById(docsFolderId));
       const customerFolder = customerFolders.next();
       const bookmarks = DocumentApp.openById(docsCopy.getId())
-        .getTabs()[0].asDocumentTab() // first tab
+        .getTabs()[0].asDocumentTab()
         .getBookmarks();
+
+      const bookmarkOrder = config.map(item => item.bookmarkId);
+      bookmarks.sort((a, b) => { // order bookmark using config
+        const indexA = bookmarkOrder.indexOf(a.getId());
+        const indexB = bookmarkOrder.indexOf(b.getId());
+        return indexA - indexB;
+      });
 
       imageNotFound = [];
       for (const bookmark of bookmarks.reverse()) {
         const position = bookmark.getPosition();
+        position.getElement().asParagraph().clear(); // clear content
         const imageName = config.find(item => item.bookmarkId === bookmark.getId())?.imageName;
         const str = mimeTypes.map(type => `mimeType='${type}'`).join(' or ');
         const searchQuery = `title contains '${imageName}' and (${str})`;
@@ -37,7 +45,6 @@ function createDocsFromTemplate() {
 
         if (images.hasNext()) {
           const file = images.next();
-          position.getElement().asParagraph().clear(); // clear content
           const inlineImage = position.insertInlineImage(file.getBlob());
           const aspectRatio = inlineImage.getHeight() / inlineImage.getWidth();
           inlineImage
@@ -45,8 +52,11 @@ function createDocsFromTemplate() {
             .setHeight(200 * aspectRatio);
 
         } else {
+          position.insertText('IMAGE NOT FOUND');
           imageNotFound.push(imageName);
         }
+  
+        bookmark.remove();
       }
     }
 

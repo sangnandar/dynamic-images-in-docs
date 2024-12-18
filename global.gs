@@ -5,11 +5,15 @@ const docsTemplateId = '1CW9z7_LHVccwIwjnmoFLFaA8P1LyJ1dQponbraKzSCQ'; // docs t
 const config = [
   {
     imageName: 'Figure 1',
-    bookmarkId: 'id.hzct8yvdrvd1'
+    bookmarkId: 'id.wglkb02zor96'
   },
   {
     imageName: 'Figure 2',
-    bookmarkId: 'id.vyy61n72wibh'
+    bookmarkId: 'id.ifl1btgwoni'
+  },
+  {
+    imageName: 'Figure 3',
+    bookmarkId: 'kix.jithfpq0bbwm'
   }
 ];
 
