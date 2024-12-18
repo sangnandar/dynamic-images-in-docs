@@ -12,7 +12,7 @@ None.
 # Sheets
 Check the boxes then click **Custom Menu -> Create documents**
 
-<div align="center"><img src="https://github.com/user-attachments/assets/38499891-1967-4193-99ec-36de1c12feee" /></div>
+<div align="center"><img src="https://github.com/user-attachments/assets/9e3b7522-9cfc-4254-a7ba-7fa3d18cb0e6" /></div>
 
 # Sheets dependencies
 **DO NOT** re-arrange columns or delete columns affected by the ranges.
