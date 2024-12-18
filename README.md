@@ -1,7 +1,7 @@
 # Dynamic images in Docs
 
 # Overview
-This is Google Apps Script for inserting dynamic images into Google Docs. Images are stored in Google Drive.
+This is Google Apps Script for inserting dynamic images into Google Docs using bookmarks. Images are stored in Google Drive.
 
 # Apps Script dependencies
 None. 
