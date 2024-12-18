@@ -28,7 +28,7 @@ function createDocsFromTemplate() {
         .getBookmarks();
 
       const bookmarkOrder = config.map(item => item.bookmarkId);
-      bookmarks.sort((a, b) => { // order bookmark using config
+      bookmarks.sort((a, b) => { // order bookmarks using config
         const indexA = bookmarkOrder.indexOf(a.getId());
         const indexB = bookmarkOrder.indexOf(b.getId());
         return indexA - indexB;
